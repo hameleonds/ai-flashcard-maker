@@ -1,0 +1,35 @@
+{
+  "name": "ai-flashcard-maker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^4.3.2",
+    "@heroicons/react": "^2.1.1",
+    "axios": "^1.7.9",
+    "canvas": "^3.0.0",
+    "file-saver": "^2.0.5",
+    "lucide-react": "^0.469.0",
+    "next": "^14.1.0",
+    "openai": "^4.77.0",
+    "pdfjs-dist": "^3.11.174",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^20.10.6",
+    "@types/pdfjs-dist": "^2.10.377",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.3.3"
+  }
+}
