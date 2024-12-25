@@ -36,10 +36,7 @@ export async function POST(request: Request) {
     }
 
     const client = new vision.ImageAnnotatorClient({
-      credentials: {
-        client_email: process.env.GOOGLE_CLOUD_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_CLOUD_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-      },
+      credentials: JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON || '{}'),
     });
 
     const texts = await Promise.all(
